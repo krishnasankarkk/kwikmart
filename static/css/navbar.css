@@ -1,0 +1,58 @@
+.navbar {
+    background: #101820FF;
+    color: #F2AA4CFF;
+    font-family: inherit;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-between;
+    width: 100%;
+}
+.logo {
+    width: 20%;
+    margin-left: 2rem;
+}
+.menu {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.menu-item {
+    cursor: pointer;
+}
+.menu-item:hover {
+    filter: opacity(.5);
+}
+.sale {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+}
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+.search {
+    font-family: inherit;
+    border-radius: 2rem;
+    padding: 1rem;
+    width: 30rem;
+    height: 1rem;
+    border: none;
+    background-color: rgb(25, 37, 48);
+    color: #F2AA4CFF;
+    font-size: large;
+}
+.search:focus {
+    outline: none;
+}
+.cursor {
+    cursor: pointer;
+}

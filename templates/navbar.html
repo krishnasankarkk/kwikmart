@@ -1,0 +1,20 @@
+{% load static %}
+<div class="navbar">
+    <div class="logo cursor">
+        <h1>KwikMart</h1>
+    </div>
+    <div class="menu">
+        <input class="search" type="text" placeholder="Search">
+        <h2 class="menu-item">Shop</h2>
+        <h2 class="menu-item">Blogs</h2>
+        <div class="sale menu-item">
+            <img class="cursor" src="{% static 'images/discount.png' %}" alt="Sale">
+            <h2 class="cursor">Offers!</h2>
+        </div>
+        <div class="icons">
+            <img class="menu-item" src="{% static 'images/heart.png' %}" alt="Favourite">
+            <img class="menu-item" src="{% static 'images/cart.png' %}" alt="Cart">
+            <img class="menu-item" src="{% static 'images/user.png' %}" alt="User">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Login
+{% endblock title %}
+
+{% block main %}
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <div class="login">
+        <h1>KwikMart</h1>
+        <div class="container">
+            <span class="signin">Sign In</span>
+            <label for="email">Email or mobile</label>
+            <input class="email" type="text" name="email" id="email">
+            <button class="continue">Continue</button>
+            <span>By continuing, you agree to KwikMart's <b class="under">Conditions of Use</b> and <b class="under">Privacy Notice</b>.</span>
+        </div>
+        <span>------------------------------ New User? ------------------------------</span>
+        <div class="signup">
+            <a href="/register"><span>Create new account</span></a>
+        </div>
+    </div>
+    
+{% endblock main %}

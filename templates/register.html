@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Register
+{% endblock title %}
+
+{% block main %}
+    <link rel="stylesheet" href="{% static 'css/register.css' %}">
+    <div class="register">
+        {% if messages %}
+            <ul>
+                {% for message in messages %}
+                    <div class="alert-{{message.tags}}">
+                        <strong>{{message}}</strong>
+                    </div>
+                {% endfor %}    
+            </ul>
+        {% endif %}
+        <h1>Account registeration</h1>
+        <form action="" method="post">
+            <table>
+                {{form.as_table}}
+                {% csrf_token %}
+                <tr>  
+                    <td></td>  
+                    <td><input type="submit" name="submit" value="Register" /></td>  
+                </tr>
+            </table>
+        </form>
+    </div>
+{% endblock main %}

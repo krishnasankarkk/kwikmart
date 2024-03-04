@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Ubuntu-Regular';
+    src: url('/static/fonts/Ubuntu-Regular.ttf');
+}
+@font-face {
+    font-family: 'MadimiOne-Regular';
+    src: url('/static/fonts/MadimiOne-Regular.ttf');
+}
+@font-face {
+    font-family: 'Nunito';
+    src: url('/static/fonts/Nunito-VariableFont_wght.ttf');
+}
+
+body {
+    font-family: 'Nunito';
+    background: #101820FF;
+    color: #F2AA4CFF;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+.cursor {
+    cursor: pointer;
+}
+.alert-success {
+    background: green;
+    border-radius: 2rem;
+    padding: 1rem;
+    color: #000;
+}
+.alert-warning {
+    background: red;
+    border-radius: 2rem;
+    padding: 1rem;
+    color: #000;
+}
+a {
+    color: #F2AA4CFF;
+    text-decoration: none;
+}
+.under {
+    text-decoration: underline;
+}
